@@ -1,2 +1,2 @@
-use crate::error::DomainError;
-type Result<T> = std::result::Result<T, DomainError>;
+pub use crate::error::DomainError;
+pub type Result<T> = std::result::Result<T, DomainError>;
