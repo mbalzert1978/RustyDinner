@@ -1,5 +1,5 @@
 [package]
-name = "clean_code"
+name = "rusty_dinner"
 version = "0.1.0"
 edition = "2021"
 
@@ -16,8 +16,12 @@ members = [
 application = { path = "src/application" }
 infrastructure = { path = "src/infrastructure" }
 presentation = { path = "src/presentation" }
+axum = "0.7.7"
+tokio = { version = "1.40.0", features = ["full"] }
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.130"
 
 
 [[bin]]
-name = "CleanCode"
+name = "RustyDinner"
 path = "src/main.rs"
